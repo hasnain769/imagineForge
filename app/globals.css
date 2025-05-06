@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 88%;
+
+    /* Updated brand colors based on VistaFlow logo */
+    --primary: 210 100% 50%; /* Blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 75% 60%; /* Purple */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 210 100% 50%; /* Blue */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 88%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+
+    --ring: 210 100% 50%;
+
+    /* Add this new color variable to the :root section */
+    --cream: 39 83% 87%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Update the glow classes to use the cream color */
+.glow {
+  box-shadow: 0 0 15px theme("colors.cream.500"), 0 0 30px theme("colors.cream.500/50");
+}
+
+.glow-text {
+  text-shadow: 0 0 10px theme("colors.cream.500"), 0 0 20px theme("colors.cream.500/50");
+}
+
+.glow-purple {
+  box-shadow: 0 0 15px theme("colors.purple.500"), 0 0 30px theme("colors.purple.500/50");
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 10px theme("colors.purple.500"), 0 0 20px theme("colors.purple.500/50");
+}
+
+.glow-border {
+  box-shadow: inset 0 0 10px theme("colors.cream.500"), 0 0 15px theme("colors.cream.500/30");
+}
+
+.section-container {
+  @apply h-screen w-full snap-start overflow-hidden relative flex flex-col items-center justify-center px-4 md:px-8;
+}
+
+.grid-background {
+  background-image: linear-gradient(to right, theme("colors.cyan.900/10") 1px, transparent 1px),
+    linear-gradient(to bottom, theme("colors.cyan.900/10") 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Add this new class for content padding to account for navbar */
+.content-padding {
+  padding-top: 5rem;
+}
