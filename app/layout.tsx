@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} font-sans  text-[#F1DAD4] scroll-smooth`}
+        className={`${spaceGrotesk.variable} font-sans bg-[#072703] text-[#F1DAD4] scroll-smooth`}
       >
         <ThemeProvider
           attribute="class"
