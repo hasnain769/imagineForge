@@ -118,8 +118,8 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <Button className="bg-cream-400 hover:bg-cream-300 text-black font-medium rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30">
-                  Get in Touch
+                <Button onClick={() => window.location.href = "#contact"} className="bg-cream-400 hover:bg-cream-300 text-black font-medium rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30">
+                  Let's Talk
                 </Button>
               </motion.div>
             </motion.div>

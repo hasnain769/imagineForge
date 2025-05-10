@@ -7,27 +7,23 @@ const aboutBlocks = [
   {
     title: "About VistaFlow",
     content:
-      "VistaFlow is a pioneering AI consultancy dedicated to helping businesses harness the transformative power of artificial intelligence. Our team of experts combines deep technical knowledge with strategic business acumen to deliver solutions that drive real results.",
+      "VistaFlow is a modern AI consultancy dedicated to helping businesses scale smarter by integrating intelligent automation solutions. We work directly with business owners to identify paint points that can help reduce costs and streamline workflows using the power of AI. With a bespoke and personalised plan for each customer, we design and implement tailored solutions that align with your vision and goals. Our ongoing partnership model ensures that as your business grows, your systems evolve with it - keeping everything flowing efficiently behind the scenes. You grow the vision, we automate the work.",
   },
   {
     title: "Our Philosophy",
     content:
-      "We believe in the synergy between human creativity and artificial intelligence. Our approach focuses on augmenting human capabilities rather than replacing them, creating systems where AI and humans work together to achieve extraordinary outcomes.",
+      "We believe smart growth comes from aligning human vision with intelligent systems. At VistaFlow, we empower businesses to scale by automating what slows them down - so they can focus on what moves them forward.",
   },
   {
     title: "Vision for the Future",
     content:
-      "We envision a future where AI is seamlessly integrated into every aspect of business operations, enabling unprecedented levels of efficiency, innovation, and growth. VistaFlow is committed to guiding organizations through this transformation.",
+      "With foresee a future where intelligent automation is integrated  into the fabric of every growing business - removing friction by enhancing creativity, and unlocking new levels of performance. At VistaFlow, our goal is to lead this transformation by making AI easily accessible and specifically tailored to each client’s journey. As technology evolves, so will we! With a team of experienced and highly skilled developers, we will continue to ensure that our partners are always steps ahead, with systems that scale effortlessly and strategies that drive meaningful impact.",
   },
-  {
-    title: "Our Approach",
-    content:
-      "We take a collaborative, client-centered approach to every project. By deeply understanding your business challenges and goals, we develop AI solutions that address your specific needs rather than offering one-size-fits-all implementations.",
-  },
+
   {
     title: "Research & Innovation",
     content:
-      "Our dedicated research team stays at the forefront of AI advancements, continuously exploring new technologies and methodologies. This commitment to innovation ensures our clients always benefit from the latest developments in artificial intelligence.",
+      "Our dedicated research team stays ahead of the curve, continuously exploring new and emerging AI technologies. This commitment to innovation ensures our clients gain a competitive edge through access to the latest advancements in artificial intelligence.",
   },
 ]
 

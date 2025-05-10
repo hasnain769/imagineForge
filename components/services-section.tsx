@@ -2,39 +2,44 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Cpu, Lightbulb, BarChart, Brain, Database, LineChart } from "lucide-react"
+import { Cpu, Lightbulb, BarChart, Brain, Handshake, LineChart, Waypoints } from "lucide-react"
 
 const services = [
   {
     icon: <Lightbulb className="h-10 w-10 text-cream-400" />,
     title: "AI Strategy Consulting",
-    description: "Develop a comprehensive AI roadmap tailored to your business needs and objectives.",
+    description: "We craft a tailored AI roadmap aligned with your business goals, ensuring strategic, scalable implementation.",
   },
   {
     icon: <Cpu className="h-10 w-10 text-cream-400" />,
-    title: "AI Automation Solutions",
-    description: "Implement cutting-edge AI systems to automate processes and enhance operational efficiency.",
+    title: "Intelligent Automation Systems",
+    description: "We deploy advanced AI solutions to streamline workflows, reduce costs, and boost operational efficiency.",
   },
   {
-    icon: <BarChart className="h-10 w-10 text-cream-400" />,
-    title: "Continuous AI Assistance",
-    description: "Ongoing support and optimization of your AI systems to ensure maximum performance.",
+    icon: <Handshake className="h-10 w-10 text-cream-400" />,
+    title: "Ongoing Support",
+    description: "Receive continuous support and system refinement to keep your AI tools performing at their best.",
   },
   {
     icon: <Brain className="h-10 w-10 text-cream-400" />,
     title: "Machine Learning Integration",
-    description: "Seamlessly integrate machine learning models into your existing business processes.",
+    description: "Integrate machine learning models into your operations to unlock smarter, data-driven capabilities.",
   },
   {
-    icon: <Database className="h-10 w-10 text-cream-400" />,
-    title: "Data Analytics & Insights",
-    description: "Transform raw data into actionable insights with advanced AI-powered analytics.",
+    icon: <Waypoints className="h-10 w-10 text-cream-400" />,
+    title: "Agentic Workflows Design",
+    description: "We design and implement intelligent workflows that adapt to your business needs, enhancing productivity and decision-making.",
+   
   },
+
+
   {
     icon: <LineChart className="h-10 w-10 text-cream-400" />,
     title: "Predictive Business Intelligence",
-    description: "Leverage AI to forecast trends and make data-driven business decisions.",
+    description: "Leverage AI to analyze data patterns and predict future trends, empowering informed decision-making.",
   },
+
+
 ]
 
 export default function ServicesSection() {

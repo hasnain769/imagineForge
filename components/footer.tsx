@@ -1,28 +1,45 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Twitter, Linkedin, Mail, MapPin, Phone } from "lucide-react"
-
+import { Github, Twitter, Linkedin, Mail, MapPin, Phone, Instagram } from "lucide-react"
+import Logo from '@/public/vistaFlowLogo.svg'
+import Image from "next/image"
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, href: "#", label: "GitHub" },
-    { icon: <Twitter className="h-5 w-5" />, href: "#", label: "Twitter" },
+    { icon: <Instagram className="h-5 w-5" />, href: "https://www.instagram.com/vistaflow.uae?igsh=MXBqdGZ2Y2M3YWpmbg%3D%3D&utm_source=qr", label: "Twitter" },
     { icon: <Linkedin className="h-5 w-5" />, href: "#", label: "LinkedIn" },
   ]
 
   const contactInfo = [
     { icon: <Mail className="h-5 w-5 mr-2" />, text: "info@vistaflow.ai" },
     { icon: <MapPin className="h-5 w-5 mr-2" />, text: "123 AI Boulevard, Tech City" },
-    { icon: <Phone className="h-5 w-5 mr-2" />, text: "+1 (555) 123-4567" },
+    { icon: <Phone className="h-5 w-5 mr-2" />, text: "+971 58 674 3326" },
   ]
 
   const footerLinks = [
-    { title: "Company", links: ["About Us", "Careers", "Partners", "Blog"] },
-    { title: "Services", links: ["AI Strategy", "Machine Learning", "Data Analytics", "Consulting"] },
+    {
+      title: "Company",
+      links: [
+        { text: "About Us", href: "#about" },
+        { text: "Onboarding Process", href: "#process" },
+        { text: "Contact Us", href: "#contact" }
+      ]
+    },
+    {
+      title: "Services",
+      links: [
+        { text: "AI Strategy Consulting", href: "#services" },
+        { text: "Intelligent Automations", href: "#services" },
+        { text: "Ongoing Support", href: "#services" },
+        { text: "Machine Learning Integration", href: "#services" },
+        { text: "Agentic Workflows Design", href: "#services" },
+        { text: "Predictive Business Intelligence", href: "#services" }
+      ]
+    }
+  ];
 
-  ]
 
   return (
     <footer className="w-full bg-black/40 backdrop-blur-md border-t border-gray-800 pt-16 pb-8 px-4 md:px-8">
@@ -39,7 +56,8 @@ export default function Footer() {
               className="mb-6"
             >
               <a href="#hero" className="text-2xl font-bold flex items-center">
-                <span className="text-cream-400">Vista</span>
+                <Image src={Logo} alt="V" className="inline-block h-9 w-8 pb-[0.165rem] " />
+                <span className="text-cream-400 -ml-1.5">ista</span>
                 <span className="text-cream-400">Flow</span>
               </a>
               <p className="text-gray-400 mt-4 max-w-md">
@@ -65,26 +83,19 @@ export default function Footer() {
           </div>
 
           {/* Footer Links */}
-          {footerLinks.map((section, sectionIndex) => (
-            <motion.div
-              key={section.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 + sectionIndex * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-cream-400 font-semibold mb-4">{section.title}</h3>
-              <ul className="space-y-2">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <a href="#" className="text-gray-400 hover:text-cream-400 transition-colors">
-                      {link}
-                    </a>
+          {footerLinks.map((section) => (
+            <div key={section.title}>
+              <h4>{section.title}</h4>
+              <ul>
+                {section.links.map((link, index) => (
+                  <li key={index} className="mt-2">
+                    <a href={link.href} className="hover:underline text-gray-300">{link.text}</a>
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           ))}
+
         </div>
 
         {/* Bottom Bar */}
@@ -103,6 +114,8 @@ export default function Footer() {
                 key={index}
                 href={social.href}
                 aria-label={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cream-400 transition-colors p-2 rounded-full hover:bg-gray-800"
               >
                 {social.icon}

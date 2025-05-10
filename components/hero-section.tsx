@@ -67,11 +67,11 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              <Button
+              <Button onClick={() => window.location.href = "#contact"}
                 size="lg"
                 className="bg-cream-400 hover:bg-cream-300 text-black font-medium px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30"
               >
-                Let's Get Started
+                Let's Talk
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>
