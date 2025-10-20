@@ -2,7 +2,7 @@
 title: "The Rise of AI in Business"
 date: "2025-10-15"
 excerpt: "Discover how artificial intelligence is revolutionizing industries and what it means for your business."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=The+Rise+of+AI+in+Business&font=raleway"
+image: "/ai-rise.png"
 ---
 
 Artificial intelligence (AI) is no longer a futuristic concept; it's a present-day reality that is transforming industries across the board. From automating repetitive tasks to providing deep insights from data, AI is empowering businesses to work smarter, faster, and more efficiently.

@@ -23,7 +23,7 @@ export default function BlogPostPageClient({ postData }: { postData: { title: st
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative w-full h-96 mb-8"
         >
-          <Image src={postData.image} alt={`A decorative image for the blog post titled: ${postData.title}`} layout="fill" objectFit="cover" />
+          <Image src={postData.image} alt={`A decorative image for the blog post titled: ${postData.title}`} fill style={{objectFit: "cover"}} />
         </AnimatedDiv>
         <AnimatedDiv
           initial={{ opacity: 0, y: 30 }}

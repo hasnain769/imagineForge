@@ -2,7 +2,7 @@
 title: "The Future of Machine Learning"
 date: "2025-10-05"
 excerpt: "Explore the latest trends in machine learning and what to expect in the coming years."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=The+Future+of+Machine+Learning&font=raleway"
+image: "/Gemini_Generated_Image_d49ly0d49ly0d49l.png"
 ---
 
 Machine learning (ML) is a subset of artificial intelligence that is rapidly changing the world as we know it. From self-driving cars to personalized medicine, ML is powering some of the most innovative and transformative technologies of our time.

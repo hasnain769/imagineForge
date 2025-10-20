@@ -63,7 +63,7 @@ export default function CaseStudiesSection() {
               className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:border-cream-400/50 transition-all duration-300 group overflow-hidden"
             >
               <div className="relative w-full h-64 mb-4">
-                <Image src={study.image} alt={study.title} layout="fill" objectFit="cover" />
+                <Image src={study.image} alt={study.title} fill style={{objectFit: "cover"}} />
               </div>
               <h3 className="text-xl font-bold mb-3 group-hover:text-cream-400 transition-colors">{study.title}</h3>
               <p className="text-gray-300 mb-6">{study.excerpt}</p>

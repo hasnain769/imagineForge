@@ -29,7 +29,7 @@ export default function BlogSectionClient({ posts, title }: { posts: { id: strin
             <h3 className="text-xl font-bold mb-3 group-hover:text-cream-400 transition-colors">{post.title}</h3>
             <p className="text-gray-400 text-sm mb-4">{post.date}</p>
             <p className="text-gray-300 mb-6">{post.excerpt}</p>
-            <ReadMoreButton id={post.id} />
+            <ReadMoreButton id={post.id} basePath="/blog" />
           </AnimatedDiv>
         ))}
       </div>

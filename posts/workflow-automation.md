@@ -2,7 +2,7 @@
 title: "5 Ways to Automate Your Workflow"
 date: "2025-10-10"
 excerpt: "Learn how to streamline your operations and boost productivity with these five automation strategies."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=5+Ways+to+Automate+Your+Workflow&font=raleway"
+image: "/5-ways.png"
 ---
 
 In today's fast-paced business environment, efficiency is key. The more you can automate your workflows, the more time you and your team will have to focus on strategic initiatives that drive growth. At Imagine Forge, we specialize in helping businesses leverage the power of AI to automate their workflows and boost productivity.

@@ -2,7 +2,7 @@
 title: "SEO vs. AEO: The Future of Online Visibility"
 date: "2025-10-20"
 excerpt: "Learn the difference between SEO and AEO and why you need to focus on both to stay ahead of the curve."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=SEO+vs.+AEO:+The+Future+of+Online+Visibility&font=raleway"
+image: "/Gemini_Generated_Image_nkqhzznkqhzznkqh.png"
 ---
 
 In the ever-evolving world of digital marketing, two acronyms are creating a buzz: SEO and AEO. While most people are familiar with Search Engine Optimization (SEO), Answer Engine Optimization (AEO) is a newer concept that is quickly gaining traction.
