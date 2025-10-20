@@ -10,6 +10,8 @@ import Footer from "@/components/footer"
 import TestimonialsSection from "@/components/testimonials-section"
 import OnboardingProcess from "@/components/onboarding-process"
 import TeamSection from "@/components/team-section"
+import CaseStudiesSection from "@/components/case-studies-section"
+import BlogSection from "@/components/blog-section"
 
 
 export default function Home() {
@@ -24,7 +26,9 @@ export default function Home() {
       <OnboardingProcess />
       <TeamSection />
       <AboutSection />
+      <CaseStudiesSection />
       <TestimonialsSection />
+      <BlogSection />
       <ContactSection />
       <Footer />
     </main>

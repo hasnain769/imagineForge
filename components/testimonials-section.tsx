@@ -16,8 +16,8 @@ const testimonials = [
     role: "CTO",
     company: "TechVision Inc.",
     quote:
-      "VistaFlow transformed our approach to AI implementation. Their strategic guidance helped us achieve a 40% increase in operational efficiency within just three months.",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Imagine Forge transformed our approach to AI implementation. Their strategic guidance helped us achieve a 40% increase in operational efficiency within just three months.",
+    avatar: "https://placehold.co/80x80/081a04/F1DAD4?text=SJ",
   },
   {
     id: 2,
@@ -25,8 +25,8 @@ const testimonials = [
     role: "Director of Innovation",
     company: "Global Systems",
     quote:
-      "The team at VistaFlow doesn't just understand AI—they understand business. They helped us identify opportunities we hadn't even considered, resulting in new revenue streams.",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "The team at Imagine Forge doesn't just understand AI—they understand business. They helped us identify opportunities we hadn't even considered, resulting in new revenue streams.",
+    avatar: "https://placehold.co/80x80/081a04/F1DAD4?text=MC",
   },
   {
     id: 3,
@@ -34,8 +34,8 @@ const testimonials = [
     role: "VP of Operations",
     company: "Nexus Enterprises",
     quote:
-      "Working with VistaFlow was a game-changer for our organization. Their AI solutions streamlined our data processing workflows and improved decision-making across all departments.",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Working with Imagine Forge was a game-changer for our organization. Their AI solutions streamlined our data processing workflows and improved decision-making across all departments.",
+    avatar: "https://placehold.co/80x80/081a04/F1DAD4?text=ER",
   },
   {
     id: 4,
@@ -43,8 +43,8 @@ const testimonials = [
     role: "CEO",
     company: "Innovate AI",
     quote:
-      "VistaFlow's consultancy services provided us with a clear roadmap for AI integration. Their expertise and hands-on approach made the entire process seamless and effective.",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "Imagine Forge's consultancy services provided us with a clear roadmap for AI integration. Their expertise and hands-on approach made the entire process seamless and effective.",
+    avatar: "https://placehold.co/80x80/081a04/F1DAD4?text=DP",
   },
   {
     id: 5,
@@ -52,8 +52,8 @@ const testimonials = [
     role: "Head of Data Science",
     company: "FutureTech Solutions",
     quote:
-      "The custom machine learning models developed by VistaFlow have significantly improved our predictive capabilities. Their ongoing support ensures we stay ahead of the curve.",
-    avatar: "/placeholder.svg?height=80&width=80",
+      "The custom machine learning models developed by Imagine Forge have significantly improved our predictive capabilities. Their ongoing support ensures we stay ahead of the curve.",
+    avatar: "https://placehold.co/80x80/081a04/F1DAD4?text=AP",
   },
 ]
 
@@ -246,7 +246,7 @@ export default function TestimonialsSection() {
             What Our <span className="text-cream-400 glow-text">Clients</span> Say
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Discover how VistaFlow has helped businesses across industries harness the power of AI to drive innovation
+            Discover how Imagine Forge has helped businesses across industries harness the power of AI to drive innovation
             and growth.
           </p>
         </motion.div>
@@ -291,7 +291,7 @@ export default function TestimonialsSection() {
                       <div className="mr-3 sm:mr-4 rounded-full overflow-hidden bg-gray-800 flex-shrink-0">
                         <Image
                           src={testimonial.avatar || "/placeholder.svg"}
-                          alt={testimonial.name}
+                          alt={`A portrait of ${testimonial.name}, a satisfied client of Imagine Forge`}
                           width={40}
                           height={40}
                           className="object-cover"

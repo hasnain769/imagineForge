@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Send } from "lucide-react"
+import JsonLd from "./json-ld"
 
 export default function ContactSection() {
   const ref = useRef(null)
@@ -17,8 +18,45 @@ export default function ContactSection() {
     { id: "email", label: "Email", type: "email", placeholder: "Enter your email" },
   ]
 
+  const businessData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Imagine Forge",
+    "image": "https://www.imagineforge.ai/imagineForgeLogo.svg",
+    "@id": "",
+    "url": "https://www.imagineforge.ai/",
+    "telephone": "+971 58 674 3326",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 AI Boulevard",
+      "addressLocality": "Tech City",
+      "postalCode": "12345",
+      "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.2048,
+      "longitude": 55.2708
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    } 
+  }
+
   return (
     <section id="contact" className="min-h-screen w-full py-24 px-4 md:px-8 bg-transparent">
+      <JsonLd data={businessData} />
       <div className="max-w-3xl mx-auto w-full z-10 pt-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -2,22 +2,25 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
+import JsonLd from "./json-ld"
 
 const aboutBlocks = [
   {
-    title: "About VistaFlow",
+    title: "About Imagine Forge",
     content:
-      "VistaFlow is a modern AI consultancy dedicated to helping businesses scale smarter by integrating intelligent automation solutions. We work directly with business owners to identify paint points that can help reduce costs and streamline workflows using the power of AI. With a bespoke and personalised plan for each customer, we design and implement tailored solutions that align with your vision and goals. Our ongoing partnership model ensures that as your business grows, your systems evolve with it - keeping everything flowing efficiently behind the scenes. You grow the vision, we automate the work.",
+      "Imagine Forge is a team of builders, thinkers, and innovators dedicated to turning your imagination into reality. We specialize in creating intelligent AI automations, systems, and SaaS products that transform your workflows and elevate your business. We work with you to understand your vision and build the tools you need to succeed.",
   },
   {
     title: "Our Philosophy",
     content:
-      "We believe smart growth comes from aligning human vision with intelligent systems. At VistaFlow, we empower businesses to scale by automating what slows them down - so they can focus on what moves them forward.",
+      "We believe that anything you can imagine, we can build. Our philosophy is centered around the idea that technology should be a tool for empowerment, enabling businesses to reach their full potential. We are committed to building solutions that are not only powerful but also intuitive and easy to use.",
   },
   {
     title: "Vision for the Future",
     content:
-      "With foresee a future where intelligent automation is integrated  into the fabric of every growing business - removing friction by enhancing creativity, and unlocking new levels of performance. At VistaFlow, our goal is to lead this transformation by making AI easily accessible and specifically tailored to each client’s journey. As technology evolves, so will we! With a team of experienced and highly skilled developers, we will continue to ensure that our partners are always steps ahead, with systems that scale effortlessly and strategies that drive meaningful impact.",
+      "Our vision is to be the leading force in AI-driven innovation, creating a future where intelligent systems are seamlessly integrated into every aspect of business. We are constantly exploring new technologies and pushing the boundaries of what is possible, ensuring that our clients always have access to the most advanced solutions.",
   },
 
   {
@@ -31,8 +34,22 @@ export default function AboutSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false, amount: 0.1 })
 
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": aboutBlocks.map(block => ({
+      "@type": "Question",
+      "name": block.title,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": block.content
+      }
+    }))
+  }
+
   return (
     <section id="about" className="min-h-screen w-full py-24 px-4 md:px-8 bg-transparent">
+      <JsonLd data={faqData} />
       <div className="max-w-4xl mx-auto z-10 pt-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -60,6 +77,12 @@ export default function AboutSection() {
               <p className="text-gray-300">{block.content}</p>
             </motion.div>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <Button onClick={() => window.location.href = "/blog"} className="bg-cream-400 hover:bg-cream-300 text-black font-medium rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30">
+            Read Our Blog
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </section>

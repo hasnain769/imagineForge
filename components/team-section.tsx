@@ -14,14 +14,14 @@ const teamMembers = [
     name: "George Ishmail",
     role: "Founder & CEO",
     image: George,
-    bio: "With over 15 years in AI development and strategic consulting, George leads VistaFlow's vision to transform businesses through innovative AI solutions.",
+    bio: "With over 15 years in AI development and strategic consulting, George leads Imagine Forge's vision to transform businesses through innovative AI solutions.",
     social: { linkedin: "#", instagram: "#", facebook: "#" },
   },
   {
     name: "Syed Hasnain",
     role: "Chief Technology Officer",
     image: Hasnain,
-    bio: "Hasnain brings deep expertise in machine learning and neural networks, overseeing the technical development of all VistaFlow's cutting-edge AI implementations.",
+    bio: "Hasnain brings deep expertise in machine learning and neural networks, overseeing the technical development of all Imagine Forge's cutting-edge AI implementations.",
     social: { linkedin: "#", instagram: "#", facebook: "#" },
   },
   {
@@ -84,7 +84,7 @@ export default function TeamSection() {
             Meet Our <span className="text-cream-400 glow-text">Team</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            The brilliant minds behind VistaFlow's innovative AI solutions and strategic vision.
+            The brilliant minds behind Imagine Forge's innovative AI solutions and strategic vision.
           </p>
         </motion.div>
 
@@ -157,7 +157,7 @@ const TeamMemberCard = ({ member, index, isMobile, activeCardIndex, setActiveCar
           <div className="relative w-full h-[70%] overflow-hidden">
             <Image
               src={member.image}
-              alt={member.name}
+              alt={`A portrait of ${member.name}, ${member.role} at Imagine Forge`}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 300px"

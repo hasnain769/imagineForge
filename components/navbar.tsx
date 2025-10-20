@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
-import Logo from'@/public/vistaFlowLogo.svg'
+import Logo from'@/public/imagineForgeLogo.svg'
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -44,10 +44,12 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: "Home", href: "#hero" },
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#hero" },
+    { name: "Services", href: "/#services" },
+    { name: "About", href: "/#about" },
+    { name: "Case Studies", href: "/case-studies" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/#contact" },
   ]
 
   return (
@@ -58,10 +60,7 @@ export default function Navbar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
-            isScrolled ? "bg-black/60 backdrop-blur-md py-3" : "bg-transparent py-5"
-          }`}
-        >
+          className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-black/60 backdrop-blur-md py-3" : "bg-transparent py-5"}`}>
           <div className="container mx-auto px-4 flex justify-between items-center">
             <AnimatePresence mode="wait">
               {animationStage === 1 ? (
@@ -73,22 +72,22 @@ export default function Navbar() {
                   className="text-2xl font-bold flex items-center invisible"
                   style={{ height: "32px" }} // Ensure consistent height
                 >
-                  <span>ista</span>
-                  <span>Flow</span>
+                  <span>magine</span>
+                  <span>Forge</span>
                 </motion.div>
               ) : (
 <motion.a
   id="navbar-logo"
   key="logo"
-  href="#hero"
+  href="/"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 0.3 }}
   className="text-2xl font-bold flex items-center"
 >
   <Image src={Logo} alt="V" className="inline-block h-9 w-8 pb-[0.165rem] " />
-  <span className="text-cream-400 -ml-1.5">ista</span>
-  <span className="text-cream-400">Flow</span>
+  <span className="text-cream-400 -ml-1.5">magine</span>
+  <span className="text-cream-400">Forge</span>
 </motion.a>
 
               )}
@@ -149,8 +148,8 @@ export default function Navbar() {
           >
             <div className="flex justify-between items-center p-4">
               <a href="#hero" className="text-2xl font-bold flex items-center">
-                <span className="text-cream-400">Vista</span>
-                <span className="text-cream-400">Flow</span>
+                <span className="text-cream-400">Imagine</span>
+                <span className="text-cream-400">Forge</span>
               </a>
               <button className="text-white" onClick={() => setIsMobileMenuOpen(false)}>
                 <X className="h-6 w-6" />

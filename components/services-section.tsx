@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Cpu, Lightbulb, BarChart, Brain, Handshake, LineChart, Waypoints } from "lucide-react"
+import JsonLd from "./json-ld"
 
 const services = [
   {
@@ -46,8 +47,22 @@ export default function ServicesSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false, amount: 0.1 })
 
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": services.map(service => ({
+      "@type": "Question",
+      "name": service.title,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": service.description
+      }
+    }))
+  }
+
   return (
     <section id="services" className="min-h-screen w-full py-24 px-4 md:px-8 bg-transparent">
+      <JsonLd data={faqData} />
       <div className="max-w-6xl mx-auto z-10 pt-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

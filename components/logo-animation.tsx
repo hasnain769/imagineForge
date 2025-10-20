@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import Logo from '@/public/vistaFlowLogo.svg'
+import Logo from '@/public/imagineForgeLogo.svg'
 export default function LogoAnimation() {
   const [animationStage, setAnimationStage] = useState(0)
   // 0: Initial black screen
@@ -144,8 +144,8 @@ export default function LogoAnimation() {
             className="fixed text-5xl font-bold flex items-center z-[70]"
           >
             <Image src={Logo} alt="V" className="  h-[4.5rem] w-[3.5rem] pb-[0.380rem]" />
-            <span className="text-cream-400 -ml-3 ">ista</span>
-            <span className="text-cream-400 ">Flow</span>
+            <span className="text-cream-400 -ml-3 ">magine</span>
+            <span className="text-cream-400 ">Forge</span>
           </motion.div>
         )}
       </AnimatePresence>

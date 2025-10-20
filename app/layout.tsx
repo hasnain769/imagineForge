@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "VistaFlow | AI Consultancy",
-  description: "Flow into the future with AI consultancy services from VistaFlow",
+  title: "Imagine Forge | AI-Powered Automation & SaaS Solutions",
+  description: "Transform your business with intelligent AI automations, custom SaaS products, and expert AI consulting. Imagine Forge turns your ideas into reality.",
   icons: {
     icon: "/favicon.ico",
   }
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} font-sans bg-[#081a04] text-[#F1DAD4] scroll-smooth`}
+        className={`${spaceGrotesk.variable} font-sans bg-[#030303] text-[#F1DAD4] scroll-smooth`}
       >
         <ThemeProvider
           attribute="class"

@@ -34,7 +34,7 @@ const processSteps = [
     number: 4,
     title: "Long-Term Partnership & Support",
     description:
-      "At VistaFlow, we don't just install solutions—we become your long-term growth partner. Our ongoing support ensures your AI systems stay updated, aligned, and optimized as your business evolves. You stay focused on what you do best—while we keep everything flowing behind the scenes.",
+      "At Imagine Forge, we don't just install solutions—we become your long-term growth partner. Our ongoing support ensures your AI systems stay updated, aligned, and optimized as your business evolves. You stay focused on what you do best—while we keep everything flowing behind the scenes.",
     icon: <Users className="h-8 w-8 text-cream-400" />,
     color: "from-cream-400/50 to-cream-400/5",
   },
