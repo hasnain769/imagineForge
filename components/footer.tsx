@@ -56,8 +56,8 @@ export default function Footer() {
               className="mb-6"
             >
               <a href="/" className="text-2xl font-bold flex items-center">
-                <Image src={Logo} alt="V" className="inline-block h-9 w-8 pb-[0.165rem] " />
-                <span className="text-cream-400 -ml-1.5">magine</span>
+                {/* <Image src={Logo} alt="V" className="inline-block h-9 w-8 pb-[0.165rem] " /> */}
+                <span className="text-cream-400 -ml-1.5">Imagine</span>
                 <span className="text-cream-400">Forge</span>
               </a>
               <p className="text-gray-400 mt-4 max-w-md">

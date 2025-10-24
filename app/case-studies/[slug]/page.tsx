@@ -7,8 +7,9 @@ export async function generateStaticParams() {
   return paths
 }
 
-export default async function CaseStudyPage({ params: { slug } }: { params: { slug: string } }) {
-  const caseStudyData = await getCaseStudyData(slug)
+export default async function CaseStudyPage({ params }: { params: { slug: string } }) {
+  const awaitedParams = await params;
+  const caseStudyData = await getCaseStudyData(awaitedParams.slug)
 
   const jsonLd = {
     '@context': 'https://schema.org',

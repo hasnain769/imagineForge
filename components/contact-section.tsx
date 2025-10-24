@@ -39,13 +39,13 @@ export default function ContactSection() {
   ]
 
   // --- Handle input changes ---
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { id, value } = e.target
     setFormData((prev) => ({ ...prev, [id]: value }))
   }
 
   // --- Handle form submission ---
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault() // Prevent default form submission
     setIsSubmitting(true)
 

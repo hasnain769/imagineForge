@@ -45,11 +45,12 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/#hero" },
+    { name: "Pricing", href: "/pricing" },
     { name: "Services", href: "/#services" },
     { name: "About", href: "/#about" },
     { name: "Case Studies", href: "/case-studies" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/#contact" },
+
   ]
 
   return (
@@ -85,8 +86,8 @@ export default function Navbar() {
   transition={{ duration: 0.3 }}
   className="text-2xl font-bold flex items-center"
 >
-  <Image src={Logo} alt="V" className="inline-block h-9 w-8 pb-[0.165rem] " />
-  <span className="text-cream-400 -ml-1.5">magine</span>
+  {/* <Image src={Logo} alt="V" className="inline-block h-9 w-8 pb-[0.165rem] " /> */}
+  <span className="text-cream-400 -ml-1.5">Imagine</span>
   <span className="text-cream-400">Forge</span>
 </motion.a>
 

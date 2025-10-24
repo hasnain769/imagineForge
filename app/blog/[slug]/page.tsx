@@ -8,7 +8,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const postData = await getPostData(params.slug)
+  const awaitedParams = await params;
+  const postData = await getPostData(awaitedParams.slug)
 
   const jsonLd = {
     '@context': 'https://schema.org',
