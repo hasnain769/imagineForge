@@ -70,6 +70,10 @@ const serviceAddOns = [
         price: "$300 – $700",
     },
     {
+        service: "Custom User Interface Design & Development",
+        price: "$200 – $1000",
+    },
+    {
         service: "Advanced API / Database Setup",
         price: "$200 – $500",
     },
@@ -93,7 +97,7 @@ export default function PricingPageClient() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-          Imagine Forge - Development & Website Packages
+          Imagine Forge - Development Packages
         </h1>
         <p className="mt-4 text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
           Choose a plan that fits your business goals—from launching your idea to scaling your platform.
@@ -143,7 +147,7 @@ export default function PricingPageClient() {
       <div className="mt-16 text-center">
         <Card className="inline-block bg-gray-900/50 border-gray-800 text-white p-6">
             <CardHeader>
-                <CardTitle>🛠️ Custom Plan</CardTitle>
+                <CardTitle>Custom Plan</CardTitle>
             </CardHeader>
             <CardContent>
                 <p className="text-gray-400">For complex projects, unique requirements, or needs not covered by our standard packages. <br/> Don't see a perfect fit? We can build a custom plan tailored specifically to your project's scope, technical requirements, and long-term goals. This can include dedicated teams, specialized integrations, or unique hosting solutions.</p>
@@ -179,7 +183,7 @@ export default function PricingPageClient() {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8">⚙️ Service Add-Ons</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-8">Service Add-Ons</h2>
         <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
                 <thead>
@@ -201,7 +205,7 @@ export default function PricingPageClient() {
       </div>
 
       <div className="mt-20 text-center border-t border-gray-800 pt-10">
-        <h2 className="text-3xl font-bold text-white">📅 Payment Terms</h2>
+        <h2 className="text-3xl font-bold text-white">Payment Terms</h2>
         <div className="max-w-2xl mx-auto mt-4 text-gray-400 space-y-4">
             <p><span className="font-semibold text-white">Projects:</span> 50% deposit to begin work, 50% upon final delivery or milestone completion.</p>
             <p><span className="font-semibold text-white">Retainers:</span> Monthly plans are billed at the beginning of each 30-day cycle.</p>

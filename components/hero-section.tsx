@@ -50,7 +50,7 @@ export default function HeroSection() {
                         transition={{ duration: 0.7 }}
                         className="text-3xl md:text-6xl font-bold mb-4"
                       >
-                        If you can <span className="text-cream-400 glow-text">Imagine</span> it, we can <span className="text-cream-400 glow-text">Forge</span> it.
+                      <span className="text-cream-400 glow-text">Imagine</span> Boldly. We <span className="text-cream-400 glow-text">Forge</span> Intelligently
                       </motion.h1>
             
                       <motion.p
@@ -59,23 +59,24 @@ export default function HeroSection() {
                         transition={{ duration: 0.7, delay: 0.2 }}
                         className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto"
                       >
-                        Transform your workflows into intelligent AI automations and systems. We can also build SaaS products.
+                        Your vision, transformed into powerful AI automations and bespoke systems.
                       </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
+              className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8"
             >
                               <Button onClick={() => window.location.href = "#contact"}
                               size="lg"
-                              className="bg-cream-400 hover:bg-cream-300 text-black font-medium px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30"
+                              className="w-full md:w-auto bg-cream-400 hover:bg-cream-300 text-black font-medium px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30"
                             >
                               Let's Talk
                               <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
                             <Button onClick={() => window.location.href = "#services"}
                               size="lg"
-                              className="bg-transparent border border-cream-400 text-cream-400 hover:bg-cream-400 hover:text-black font-medium px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30 ml-4"
+                              className="w-full md:w-auto bg-transparent border border-cream-400 text-cream-400 hover:bg-cream-400 hover:text-black font-medium px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cream-400/30"
                             >
                               View Our Services
                             </Button>            </motion.div>
