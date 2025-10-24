@@ -143,8 +143,8 @@ export default function LogoAnimation() {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="fixed text-5xl font-bold flex items-center z-[70]"
           >
-            <Image src={Logo} alt="V" className="  h-[4.5rem] w-[3.5rem] pb-[0.380rem]" />
-            <span className="text-cream-400 -ml-3 ">magine</span>
+            {/* <Image src={Logo} alt="V" className="  h-[4.5rem] w-[3.5rem] pb-[0.380rem]" /> */}
+            <span className="text-cream-400 -ml-3 ">Imagine</span>
             <span className="text-cream-400 ">Forge</span>
           </motion.div>
         )}
