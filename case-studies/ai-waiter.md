@@ -2,7 +2,7 @@
 title: "AI Waiter for Restaurants"
 date: "2025-10-18"
 excerpt: "An AI-powered waiter that can take orders, answer questions, and process payments, freeing up human waiters to focus on providing excellent customer service."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=AI+Waiter"
+image: "/AI-waiter.png"
 ---
 
 ## The Challenge

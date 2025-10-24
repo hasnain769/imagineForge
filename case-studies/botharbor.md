@@ -2,7 +2,7 @@
 title: "BotHarbor: AI Chatbots as a Service"
 date: "2025-10-12"
 excerpt: "A SaaS platform for building and deploying AI-powered chatbots for customer support, e-commerce, and small businesses."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=BotHarbor"
+image: "/botharbor.png"
 ---
 
 ## The Challenge

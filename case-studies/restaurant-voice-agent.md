@@ -2,7 +2,7 @@
 title: "Restaurant Reservation Voice Agent"
 date: "2025-10-20"
 excerpt: "An AI-powered voice agent that can handle restaurant reservations over the phone, reducing the workload on staff and improving the customer experience."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=Restaurant+Voice+Agent"
+image: "/restaurentbot.png"
 ---
 
 ## The Challenge
@@ -17,6 +17,14 @@ Imagine Forge developed an AI-powered voice agent that can handle restaurant res
 
 The AI-powered voice agent has been a huge success. The restaurant has seen a significant reduction in the number of phone calls, which has freed up the staff to focus on providing excellent customer service. Customers are also happier with the new system, as they can now book a reservation quickly and easily without having to wait on hold.
 
-## Live Demo
+## Try Demo
 
-To see the voice agent in action, you can call the following number: **+1-555-123-4567**
+Click the button in the corner to start a conversation with the voice agent.
+
+<script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async></script>
+<vapi-widget 
+  publicKey="992bd5fb-c74c-4955-9371-4ae0b3aec062" 
+  assistant="c72f770b-2c30-4021-a81e-6a4f85f176e9"
+  button-base-color="#FFFFFF"
+  button-accent-color="#000000">
+</vapi-widget>

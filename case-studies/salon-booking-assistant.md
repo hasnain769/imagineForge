@@ -2,7 +2,7 @@
 title: "Booking Assistant for Salons"
 date: "2025-10-15"
 excerpt: "An AI-powered booking assistant that can schedule appointments, send reminders, and manage cancellations, reducing no-shows and improving efficiency."
-image: "https://placehold.co/1200x600/081a04/F1DAD4?text=Salon+Booking+Assistant"
+image: "/saloonbot.png"
 ---
 
 ## The Challenge

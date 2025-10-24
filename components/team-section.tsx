@@ -4,22 +4,22 @@ import { useState, useRef, useEffect } from "react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import Hasnain from "@/public/hasnain.jpeg"
-import George from "@/public/george.png"
+import George from "@/public/george.jpeg"
 import Sophia from "@/public/sophia.jpeg"
 import { Instagram, Linkedin, Facebook } from "lucide-react"
 
 // Team member data
 const teamMembers = [
   {
-    name: "George Ishmail",
+    name: "Caliq J Creque",
     role: "Founder & CEO",
     image: George,
-    bio: "With over 15 years in AI development and strategic consulting, George leads Imagine Forge's vision to transform businesses through innovative AI solutions.",
+    bio: "Caliq brings years of experience as a CEO and founder, combining strategic leadership with strong sales and business development skills to drive revenue growth and lasting client relationships.",
     social: { linkedin: "#", instagram: "#", facebook: "#" },
   },
   {
     name: "Syed Hasnain",
-    role: "Chief Technology Officer",
+    role: "Founder & CTO",
     image: Hasnain,
     bio: "Hasnain brings deep expertise in machine learning and neural networks, overseeing the technical development of all Imagine Forge's cutting-edge AI implementations.",
     social: { linkedin: "#", instagram: "#", facebook: "#" },

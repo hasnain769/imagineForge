@@ -19,7 +19,7 @@ export default async function CaseStudyPage({ params: { slug } }: { params: { sl
     author: {
       '@type': 'Organization',
       name: 'Imagine Forge',
-      url: 'https://www.imagineforge.ai/',
+      url: 'https://www.imagineforge.tech/',
     },
   }
 

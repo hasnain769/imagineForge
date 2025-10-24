@@ -13,9 +13,9 @@ export default function Footer() {
   ]
 
   const contactInfo = [
-    { icon: <Mail className="h-5 w-5 mr-2" />, text: "info@imagineforge.ai" },
-    { icon: <MapPin className="h-5 w-5 mr-2" />, text: "123 AI Boulevard, Tech City" },
-    { icon: <Phone className="h-5 w-5 mr-2" />, text: "+971 58 674 3326" },
+    { icon: <Mail className="h-5 w-5 mr-2" />, text: "syedhasnain769@gmail.com" },
+    { icon: <MapPin className="h-5 w-5 mr-2" />, text: "leverick bay road north sound virgin gorda" },
+    { icon: <Phone className="h-5 w-5 mr-2" />, text: "+1 (284) 342-6631" },
   ]
 
   const footerLinks = [
