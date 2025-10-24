@@ -23,8 +23,10 @@ Click the button in the corner to start a conversation with the voice agent.
 
 <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async></script>
 <vapi-widget 
-  publicKey="992bd5fb-c74c-4955-9371-4ae0b3aec062" 
+  publicKey="992bd5fb-c74c-4955-9371-4ae0b3aec062"
   assistant="c72f770b-2c30-4021-a81e-6a4f85f176e9"
   button-base-color="#FFFFFF"
-  button-accent-color="#000000">
+  button-accent-color="#000000"
+  size="tiny"
+  position="bottom-right">
 </vapi-widget>

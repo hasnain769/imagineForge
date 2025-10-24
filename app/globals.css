@@ -108,3 +108,18 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+vapi-widget {
+  /* Default size for desktop */
+  width: 60px !important;
+  height: 60px !important;
+}
+
+@media (max-width: 768px) {
+  vapi-widget {
+    /* Smaller size for mobile */
+    width: 30px !important;
+    height: 30px !important;
+    right: 10px !important; /* Force right alignment with offset */
+  }
+}

@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function CaseStudyPageClient({ caseStudyData }: { caseStudyData: { title: string, date: string, contentHtml: string, image: string } }) {
   return (
     <section className="min-h-screen w-full py-24 px-4 md:px-8 bg-transparent">
-      <div className="max-w-4xl mx-auto z-10 pt-16">
+      <div className="max-w-4xl mx-auto z-10 pt-24">
         <AnimatedH1>{caseStudyData.title}</AnimatedH1>
         <AnimatedDiv
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export default function CaseStudyPageClient({ caseStudyData }: { caseStudyData: 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8 prose prose-invert max-w-none"
+          className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8 prose prose-invert max-w-none pb-20"
           dangerouslySetInnerHTML={{ __html: caseStudyData.contentHtml }}
         />
       </div>
