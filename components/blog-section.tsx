@@ -3,5 +3,6 @@ import BlogPageClient from '@/app/blog/blog-page-client'
 
 export default function BlogPage() {
   const allPostsData = getSortedPostsData()
-  return <BlogPageClient posts={allPostsData} />
+  const recentPosts = allPostsData.slice(0, 3)
+  return <BlogPageClient posts={recentPosts} />
 }
