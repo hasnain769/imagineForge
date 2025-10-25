@@ -21,4 +21,4 @@ The AI waiter has been a game-changer for the restaurant. The human waiters are 
 
 To see the AI waiter in action, you can watch the following video:
 
-<div style="position: relative; padding-bottom: 48.975188781014026%; height: 0;"><iframe src="https://www.loom.com/embed/91d4ed3f4acf4fc3873dde5b44189bb9?sid=cec8020b-7e2e-4341-aaa7-9eb2856bc4bc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 48.975188781014026%; height: 0;"><iframe src="https://www.loom.com/embed/745dfd5415ce49649d7a3cc6631b2df1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
